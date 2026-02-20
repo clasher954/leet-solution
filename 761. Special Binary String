@@ -1,0 +1,24 @@
+class solution:{
+public: 
+  makeLargestspecial(string s){
+     int start = 0;
+ int sum = 0;
+   for(int i  = 0 ; i < s.length(); i++){
+         int sum += s[i] == '1' ? 1 : -1;
+          if(sum == 0){
+               string inner = s.substr(start - 1, i-start-1);
+                specials.push_back('1' + makeLargestspecial(inner) + '0';
+                   start = i+1;
+          }
+   }
+      sort(begin(specials), end(specials),greater<string>) // greater int is comparator and is used for sort in desecending order
+    string result;
+   for(string &str : specials){
+      result += str;
+     
+}
+return result;
+ } 
+};
+
+   
